@@ -24,6 +24,7 @@ var saveNote = function(note) {
   });
 };
 
+
 // A function for deleting a note from the db
 var deleteNote = function(id) {
   return $.ajax({
@@ -105,15 +106,20 @@ var handleRenderSaveBtn = function() {
 
 // Render's the list of note titles
 var renderNoteList = function(notes) {
+  console.log(notes)
   $noteList.empty();
 
   var noteListItems = [];
+  console.log(notes.length)
 
   for (var i = 0; i < notes.length; i++) {
     var note = notes[i];
 
-    var $li = $("<li class='list-group-item'>").data(note);
-    var $span = $("<span>").text(note.title);
+    var $li = $("<li class='list-group-item'>");
+    $li.data(note);
+    console.log($li)
+    var $span = $("<span>");
+    $span.text(note.title);
     var $delBtn = $(
       "<i class='fas fa-trash-alt float-right text-danger delete-note'>"
     );
