@@ -34,7 +34,7 @@ What things you need to install the software
 
 See also the repository specifically for this activity - [GitHub](https://tamaragolub.github.io/note_taker_new/)
 
-See also the deployed link for this activity - [Heroku] (https://young-mountain-53952.herokuapp.com/)
+See also the deployed link for this activity - [Heroku](https://young-mountain-53952.herokuapp.com/)
 
 
 ## Acknowledgments
